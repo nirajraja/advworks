@@ -1,3 +1,9 @@
-<p>
-  people works!
-</p>
+<div class="person">
+  <ul *ngIf="person">
+    <p>Random Person</p>
+    <br />
+    <li>ID: {{person.businessEntityID}}</li>
+    <li>Name: {{person.lastName}}, {{person.firstName}}</li>
+    <li>Type: {{person.personType}}</li>
+  </ul>
+</div>
