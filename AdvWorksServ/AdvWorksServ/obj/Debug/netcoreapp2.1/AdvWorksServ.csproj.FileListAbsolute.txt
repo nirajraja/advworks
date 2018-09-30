@@ -1,0 +1,14 @@
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\bin\Debug\netcoreapp2.1\AdvWorksServ.deps.json
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\bin\Debug\netcoreapp2.1\AdvWorksServ.runtimeconfig.json
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\bin\Debug\netcoreapp2.1\AdvWorksServ.runtimeconfig.dev.json
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\bin\Debug\netcoreapp2.1\AdvWorksServ.dll
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.csprojAssemblyReference.cache
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.csproj.CoreCompileInputs.cache
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.RazorAssemblyInfo.cache
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.RazorAssemblyInfo.cs
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.AssemblyInfoInputs.cache
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.AssemblyInfo.cs
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.RazorTargetAssemblyInfo.cache
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\bin\Debug\netcoreapp2.1\AdvWorksServ.pdb
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.dll
+C:\My Documents\Programming\Projects\Test\AdvWorks\AdvWorksServ\AdvWorksServ\obj\Debug\netcoreapp2.1\AdvWorksServ.pdb
