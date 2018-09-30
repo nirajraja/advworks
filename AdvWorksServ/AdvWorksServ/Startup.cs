@@ -24,8 +24,10 @@ namespace AdvWorksServ
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+            
             services.AddDbContext<PersonContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
+            
             services.AddMvc().AddXmlDataContractSerializerFormatters();
         }
 
@@ -37,6 +39,7 @@ namespace AdvWorksServ
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(options => options.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader());
             app.UseMvc();
 
             app.Run(async (context) =>

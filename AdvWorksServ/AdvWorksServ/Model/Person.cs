@@ -10,10 +10,10 @@ namespace AdvWorksServ
     public class Person
     {
         [Key]
-        public int BusinessEntityID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string PersonType { get; set; }
+        public int businessEntityID { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string personType { get; set; }
 
         public Person()
         {
