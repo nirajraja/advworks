@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AdvWorksServ.Controllers
+namespace AdvWorksServ
 {
     [Route("api/[controller]")]
     [ApiController]

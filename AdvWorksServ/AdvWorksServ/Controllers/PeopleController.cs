@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AdvWorksServ.Model;
 
-namespace AdvWorksServ.Controllers
+namespace AdvWorksServ
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -55,7 +54,7 @@ namespace AdvWorksServ.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != person.Id)
+            if (id != person.BusinessEntityID)
             {
                 return BadRequest();
             }
@@ -93,7 +92,7 @@ namespace AdvWorksServ.Controllers
             _context.People.Add(person);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPerson", new { id = person.Id }, person);
+            return CreatedAtAction("GetPerson", new { id = person.BusinessEntityID }, person);
         }
 
         // DELETE: api/People/5
@@ -119,7 +118,7 @@ namespace AdvWorksServ.Controllers
 
         private bool PersonExists(int id)
         {
-            return _context.People.Any(e => e.Id == id);
+            return _context.People.Any(e => e.BusinessEntityID == id);
         }
     }
 }
