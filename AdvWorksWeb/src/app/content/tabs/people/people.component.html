@@ -1,9 +1,11 @@
 <div class="person">
-  <ul *ngIf="person">
-    <p>Random Person</p>
+  <ul *ngIf="person && !error.status">
+    <p>Random Person #{{person.businessEntityID}}</p>
     <br />
-    <li>ID: {{person.businessEntityID}}</li>
     <li>Name: {{person.lastName}}, {{person.firstName}}</li>
     <li>Type: {{person.personType}}</li>
+  </ul>
+  <ul *ngIf="error.status == 404">
+    <p>Person #{{randNum}} Not Found!</p>
   </ul>
 </div>
