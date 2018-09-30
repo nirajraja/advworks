@@ -5,17 +5,15 @@
   </h1>
   <br>
   <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/people" routerLinkActive="active">People</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/sales" routerLinkActive="active">Sales</a>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
 </div>
