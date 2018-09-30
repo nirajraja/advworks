@@ -9,14 +9,18 @@ import { PeopleService } from '../../services/people/people.service';
 export class PeopleComponent implements OnInit {
 
   person:any = {};
+  error:any = {};
+  randNum:number = 0;
 
   constructor(public peopleSrv:PeopleService) { }
 
   ngOnInit() {
     this.person = {};
-
-    this.peopleSrv.getPerson(this.getRandomInt(55)).subscribe((data) => {
+    this.randNum = this.getRandomInt(999);
+    this.peopleSrv.getPerson(this.randNum).subscribe((data) => {
       this.person = data;
+    }, (error) => {
+      this.error = error;
     });
   }
 
