@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AdvWorksServ.Model;
+using Microsoft.AspNetCore.Cors;
 
-namespace AdvWorksServ.Controllers
+namespace AdvWorksServ
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -29,6 +29,7 @@ namespace AdvWorksServ.Controllers
 
         // GET: api/People/5
         [HttpGet("{id}")]
+        [DisableCors]
         public async Task<IActionResult> GetPerson([FromRoute] int id)
         {
             if (!ModelState.IsValid)
@@ -55,7 +56,7 @@ namespace AdvWorksServ.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != person.Id)
+            if (id != person.businessEntityID)
             {
                 return BadRequest();
             }
@@ -93,7 +94,7 @@ namespace AdvWorksServ.Controllers
             _context.People.Add(person);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPerson", new { id = person.Id }, person);
+            return CreatedAtAction("GetPerson", new { id = person.businessEntityID }, person);
         }
 
         // DELETE: api/People/5
@@ -119,7 +120,7 @@ namespace AdvWorksServ.Controllers
 
         private bool PersonExists(int id)
         {
-            return _context.People.Any(e => e.Id == id);
+            return _context.People.Any(e => e.businessEntityID == id);
         }
     }
 }
